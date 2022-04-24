@@ -1,0 +1,175 @@
+header {
+  background-color: #888;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+#small-logo {
+  width: 20%;
+  max-width: 500px;
+}
+.nav{
+  padding: .3in;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  text-shadow: 0 0 black;
+}
+
+body {
+  background-image: url("white-marble.jpg"); /* Photo by Henry & Co. from Pexels */
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+  width: 40%;
+  max-width: 800px;
+  margin: .75in auto;
+  padding: 1in;
+}
+
+main::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #25283D;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #25283D;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #25283D;
+  font-size: 1.2rem;
+}
+
+.linked {
+  font-family: 'Roboto', sans-serif;
+  color: #25283D;
+  font-size: 1.2rem;
+}
+
+.description {
+  font-size: 1.4rem;
+}
+
+.image {
+  float: left;
+  margin-right: 1rem;
+}
+
+img {
+  max-width: 40%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: solid;
+  border-top-color: white;
+  background-color: #888;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.foot {
+  color: white;
+}
+
+#ethics {
+  display: grid;
+  grid-template-areas: "honesty respon"
+  "comm respect"
+  "support independence";
+  grid-gap: 20px;
+}
+
+.value {
+  background-image: url("white-marble.jpg");
+  max-height:4in;
+  width: 3.5in;
+  text-align: center;
+}
+
+@media screen and (max-width: 1450px) {
+  #ethics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: .5in;
+    width: 55%;
+  }
+
+  #small-logo {
+    min-width: 100px;
+  }
+
+  .image {
+    min-width: 250px;
+  }
+}
+
+@media(prefers-color-scheme: dark){
+  body {
+    background-image: url("black-marble.jpg"); /*Photo by Adrien Olichon from Pexels*/
+  }
+
+  main {
+    background-color: #888;
+  }
+
+  h1 {
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+
+  h2,h3, p, ul, .linked{
+    color: white;
+  }
+
+  h2 {
+    text-shadow: 2px 2px black;
+  }
+
+  .value {
+    background-image: url("black-marble.jpg");
+  }
+}

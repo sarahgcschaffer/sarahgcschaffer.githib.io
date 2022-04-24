@@ -1,0 +1,187 @@
+header {
+  background-color: #888;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+body {
+  background-image: url("white-marble.jpg"); /* Photo by Henry & Co. from Pexels */
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+  width: 40%;
+  max-width: 800px;
+  margin: .75in auto;
+  padding: 1in;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  color: #25283D;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-family: 'Roboto', serif;
+  color: #25283D;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: 5rem;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #25283D;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #25283D;
+  font-size: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #25283D;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-shadow: 0 0 black;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: solid;
+  border-top-color: black;
+  background-color: #888;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+#small-logo {
+  width: 20%;
+  max-width: 500px;
+}
+
+.nav{
+  padding: .3in;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+.site {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "webshot webshot-desc";
+}
+
+.logo {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "logo-desc logo";
+}
+
+.social {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "jeff reel visit";
+}
+
+.advrt336 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: "pie-chart bar-graph"
+  "budget guerilla"
+  "profile dot-logo"
+}
+
+.advrt434 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ighsau {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+@media screen and (min-width: 1300px) {
+  .expand {
+    transition: transform 1s;
+  }
+
+  .expand:hover {
+    transform: scale(2.2);
+    transition: transform 2s;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: .5in;
+    width: 55%;
+  }
+
+  .site, .logo, .social, .advrt336{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  #small-logo {
+    min-width: 100px;
+  }
+}
+
+@media(prefers-color-scheme: dark){
+  body {
+    background-image: url("black-marble.jpg"); /*Photo by Adrien Olichon from Pexels*/
+  }
+
+  main {
+    background-color: #888;
+  }
+
+  h1 {
+    color: white;
+    text-shadow: 2px 2px black;
+  }
+
+  h2,h3, p, ul, a{
+    color: white;
+  }
+
+  h2 {
+    text-shadow: 2px 2px black;
+  }
+}

@@ -1,0 +1,224 @@
+header {
+  background-color: #888;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: 2px 2px black;
+}
+
+body {
+  background-image: url("white-marble.jpg"); /* Photo by Henry & Co. from Pexels */
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+  width: 40%;
+  max-width: 800px;
+  margin: .75in auto;
+  padding: 1in;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Italianno', cursive;
+  font-size: 5rem;
+  color: #70deee;
+  letter-spacing: .1rem;
+  text-shadow: 2px 2px gray;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  color: #25283D;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #25283D;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  color: #25283D;
+}
+
+ul {
+  font-family: 'Roboto', sans-serif;
+  color: #25283D;
+}
+
+img {
+  width: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  text-shadow: 0 0 black;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-top: solid;
+  border-top-color: white;
+  background-color: #888;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.foot {
+  color: white;
+}
+
+#small-logo {
+  width: 20%;
+  max-width: 500px;
+}
+
+.nav{
+  padding: .3in;
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+#logo {
+  float: left;
+}
+
+#resume {
+  display: grid;
+  grid-template-rows: 15% 15% 50% 20%;
+  grid-template-columns: 40% 20% 40%;
+  grid-gap: 15px;
+}
+
+#heading {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+#contact {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#education {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+#experience {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#skills {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#leadership {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.title {
+  font-variant: small-caps;
+}
+
+@media(prefers-color-scheme: dark){
+  body {
+    background-image: url("black-marble.jpg"); /*Photo by Adrien Olichon from Pexels*/
+  }
+
+  main {
+    background-color: #888;
+  }
+
+  h1 {
+    text-shadow: 2px 2px black;
+  }
+
+  h2,h3, p, ul{
+    color: white;
+  }
+
+  h2 {
+    text-shadow: 2px 2px black;
+  }
+}
+@media print {
+  header {
+    transform: scale(0);
+  }
+
+  main {
+    width: 100%;
+    padding: 0in;
+    margin: 0in;
+  }
+
+  h1 {
+    color: black;
+    font-size: 4em;
+    margin: -.5in;
+  }
+
+  h2,h3, p, ul{
+    color: black;
+  }
+
+  #resume {
+    max-height: 11in;
+    grid-template-rows: 6% 18% 53% 23%;
+    grid-gap: 5px;
+  }
+
+  ul {
+    font-size: 10pt;
+  }
+
+  .title {
+    line-height: 4pt;
+  }
+
+  footer {
+    transform: scale(0);
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #resume {
+    display: block;
+  }
+}
